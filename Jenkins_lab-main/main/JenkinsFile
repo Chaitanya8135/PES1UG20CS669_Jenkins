@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                sh 'g++ -c Jenkins_lab-main/main/hello.cpp'
+                sh 'g++ -c Jenkins_lab-main/hello.cpp'
                 sh 'g++ -o hello Jenkins_lab-main/main/hello.cpp'
                 echo 'build stage successfull'
             }
